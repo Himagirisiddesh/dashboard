@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Auth</title>
+
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="login2.css">
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg">
+    <lottie-player class="scene active" src="https://assets2.lottiefiles.com/packages/lf20_kyu7xb1v.json" autoplay loop></lottie-player>
+    <lottie-player class="scene" src="https://assets10.lottiefiles.com/packages/lf20_qp1q7mct.json" autoplay loop></lottie-player>
+    <lottie-player class="scene" src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json" autoplay loop></lottie-player>
+    <lottie-player class="scene" src="https://assets6.lottiefiles.com/packages/lf20_totrpclr.json" autoplay loop></lottie-player>
+</div>
+
+<div class="overlay"></div>
+
+<!-- AUTH CARD -->
+<div class="auth-box">
+    <h1>Work<span>Flow</span></h1>
+    <p class="tag">Smart Work Management</p>
+
+    <!-- LOGIN / SIGNUP -->
+    <div class="auth-switch">
+        <span class="auth-tab active" data-type="login">Login</span>
+        <span class="auth-tab" data-type="signup">Sign Up</span>
+        <div class="auth-slider"></div>
+    </div>
+
+    <!-- ROLE -->
+    <div class="role-switch">
+        <div class="role-slider"></div>
+        <span class="role active" data-role="Operator">Operator</span>
+        <span class="role" data-role="Manager">Manager</span>
+    </div>
+
+    <form id="form">
+
+        <!-- FULL NAME -->
+        <div class="field signup-only">
+            <input type="text" id="fullname">
+            <label>Full Name</label>
+            <small class="error"></small>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="field">
+            <input type="email" id="email">
+            <label>Email</label>
+            <small class="error"></small>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="field">
+            <input type="password" id="password">
+            <label>Password</label>
+            <i class="fa-solid fa-eye" id="eye"></i>
+            <small class="error"></small>
+        </div>
+
+        <button type="submit" id="submitBtn">Login as Operator</button>
+    </form>
+
+    <small>Animated Work System © 2026</small>
+</div>
+
+<script src="login3.js"></script>
+</body>
+</html>
